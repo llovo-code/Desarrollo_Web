@@ -1,10 +1,163 @@
 .navbar{
     height: 57px !important;
+    z-index: 1;
     
 }
+.navbar-color-llv{
+    background-color: #042D6D !important;
+   
+
+}
+
+.navbar-color-llv a{
+    color: white !important;
+}
+
+.dropdown-menu-color-llv a{
+    color: black !important;
+}
+
+.navbar-color-llv .form-llv input{
+    color: white;
+    background-color:rgb(255, 255, 255,0.1);
+}
+
+
+.navbar-color-llv .form-llv input:hover{
+    box-shadow: none;
+    border: none;
+    /* color: white;
+   background-color:rgb(255, 255, 255,0.80); */
+}
+
+.navbar-color-llv .form-llv button{
+    color: white;
+    border: 1px solid white;
+}
+
+.navbar-color-llv .form-llv button:hover{
+    
+    color:  #042D6D ;
+    background-color: #667FA6;
+    border: 1px solid #667FA6;
+    /* background-color: rgba(4, 45, 109, 0.75); */
+    /* opacity: 5%  !important; */
+    /*  #045D4D    */
+
+}
+
+
 
 #logo{
     width: 80px;
-    margin-top: 45px;
+    margin-top: -20px;
     border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+/* 
+.banner-llv {
+    width: 100% !important;
+    height: 550px !important;
+    background:linear-gradient(180deg, black, rgb(255, 255, 255)) !important;
+    
+}
+
+
+.banner-llv img{
+    width: 100%;
+    height: 550;
+   
+ 
+}
+@supports(object-fit: cover){
+    .banner-llv img{
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center center !important;
+    }
+} */
+
+
+.banner-llv {
+    position: relative;
+    width: 100%;
+    height:500px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+     background: linear-gradient(90deg,#f0027f,#75489F);
+    background-position: center;
+    transition: all .1s ease-in-out;
+    display: d;
+    /* animation: banner-llv-animations 20s infinite linear alternate;*/
+
+}
+/* 
+.banner-content-llv{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+@keyframes banner-llv-animations{
+    0%{
+        background-image: url('/img/102699880_165314561650639_1112310892311085056_o.jpg');
+    }
+    25%{
+        background-image: url('/img/102699880_165314561650639_1112310892311085056_o.jpg');
+    }
+    26%{
+        background-image: url('/img/104939693_170653044450124_4281198168837012639_o.jpg');
+    }
+    50%{
+        background-image: url('/img/104939693_170653044450124_4281198168837012639_o.jpg');
+    }
+    51%{
+        background-image: url('/img/caring-for-velvet.jpg.jpg');   
+    }
+    75%{
+        background-image: url('/img/caring-for-velvet.jpg');   
+    }
+    76%{
+        background-image: url('/img/99431777_161266212055474_2301823972091625472_o.jpg');
+    }
+    100%{
+        background-image: url('/img/99431777_161266212055474_2301823972091625472_o.jpg');    
+    }
+} 
+
+.wave-llv{
+    width: 100%;
+    height: 125px;
+  position: relative;
+  background: linear-gradient(90deg,#f0027f,#770cdb);
+} 
+
+.wave-llv:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background-size:#0000 ;
+    background-image: url('/img/wave#042D6D.png');
+
+}
+
+
+
+@media(max-width:767px){
+    #logo{
+        margin-top: -20px;
+    }
 }
