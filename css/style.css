@@ -88,24 +88,6 @@ position: relative;
     
 } 
 
-.wave-llv{
-    position: relative;
-    width: 100%;
-    height: 250px;
-    background-color: brown;
-    /* background-color:  rgba(0,0,0,0.2); */
-    display: flex;
-
-} 
-
-.wave-llv svg{
-   
-    width: 100%;
-    height: 100%;
-    background-color: chartreuse;
-    background-size: cover;
-}
- 
 
 
  /* ##########################  Seccion Last update ########################################### */
@@ -114,15 +96,19 @@ position: relative;
    margin-top: 50px ;
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 450px;
     
     position: relative;
+    /* background-color: darkgoldenrod; */
     
 }
 
 #Contenedor{
     /* background-color: crimson !important; */
-   
+   background-image: url('/img/banner_background.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -145,6 +131,16 @@ position: relative;
     right: 10px;
 }
 
+.head-container-llv .showmore-llv button{
+    background-color: white;
+    color: blue;
+}
+
+.head-container-llv .showmore-llv button:hover{
+    background-color:#042D6D;
+    color: white;
+}
+
 .head-container-llv text{
     position: relative;
     width: 250px;
@@ -157,14 +153,16 @@ h2{
     text-transform: uppercase;
 }
 
+/* ###############################  BEGIN SECTION LAST UPDATE 
+##################################  whit rows*/
 
 #Contenedor .row-llv{
 
     display:flex;
     position: relative;
     width: 100%;    
-    height: 410px;
-    background-color: brown;
+    height: 350px;
+    /* background-color: brown; */
     margin-top: 20px;
 
 } 
@@ -172,16 +170,70 @@ h2{
 .last-update-llv .row-llv ul{
     height: 100% ;
     width: 100% ;
-    /* background-color: cornflowerblue; */
-    
+   /* background-color: cornflowerblue; */
+    display:flex;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 .last-update-llv .row-llv ul li{
-    width: 30%;
-    height: 390px;
+    width: 40%;
+    height: 300px;
     background-color: darkblue;
+    margin-left:20px ;
+    margin-right: 20px ;
+    margin-top: 25px;
+      border-radius:35px ; 
+    list-style-type: none;
+    border: 2px solid #042D6D ;
+  
+    
 }
 
+/* ###############################  BEGIN SECTION LAST UPDATE 
+##################################  whit photos*/
+.border-container-llv{
+    border-radius: 35px;
+}
+
+.image-presentation-llv{
+    width: 100%;
+    height: 100%;
+    /* background-color: darkslategray; */
+    position: relative;
+    /* border-radius: 20%; */
+}
+
+.content-image-llv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: darkgreen; */
+    /* border-radius: 20%; */
+   
+}
+
+.content-image-llv img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+
+.documentation-image-llv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: darkorchid; */
+
+    
+}
+
+
+/* ###############################  end SECTION LAST UPDATE 
+##################################  whit photos*/
 
 @media(max-width:767px){
     #logo{
