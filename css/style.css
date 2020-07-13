@@ -206,8 +206,8 @@ h2{
 
 .content-image-llv{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 80%;
+    position: relative;
     /* background-color: darkgreen; */
     /* border-radius: 20%; */
    
@@ -224,9 +224,9 @@ h2{
 
 .documentation-image-llv{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    /* background-color: darkorchid; */
+    height: 20%;
+    position: relative;
+    background-color: darkorchid;
 
     
 }
