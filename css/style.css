@@ -1,3 +1,5 @@
+/* #######################   NAV BAR        ###################################### */
+
 .navbar{
     height: 57px !important;
     z-index: 1;
@@ -26,8 +28,6 @@
 .navbar-color-llv .form-llv input:hover{
     box-shadow: none;
     border: none;
-    /* color: white;
-   background-color:rgb(255, 255, 255,0.80); */
 }
 
 .navbar-color-llv .form-llv button{
@@ -40,14 +40,12 @@
     color:  #042D6D ;
     background-color: #667FA6;
     border: 1px solid #667FA6;
-    /* background-color: rgba(4, 45, 109, 0.75); */
-    /* opacity: 5%  !important; */
-    /*  #045D4D    */
 
 }
 
 
 
+/* #############################        LOGO            ################################# */
 #logo{
     width: 80px;
     margin-top: -20px;
@@ -55,103 +53,125 @@
     position: absolute;
     z-index: 1;
 }
-/* 
-.banner-llv {
-    width: 100% !important;
-    height: 550px !important;
-    background:linear-gradient(180deg, black, rgb(255, 255, 255)) !important;
-    
+/* #####################    BANNER          ########################## */
+
+
+
+.banner-llv{
+height: 700px;
+position: relative;
+
+
 }
 
-
-.banner-llv img{
-    width: 100%;
-    height: 550;
-   
- 
-}
-@supports(object-fit: cover){
-    .banner-llv img{
-      height: 100% !important;
-      object-fit: cover !important;
-      object-position: center center !important;
-    }
-} */
-
-
-.banner-llv {
-    position: relative;
+ .banner-llv {
+    position: relative ;
     width: 100%;
     height:500px;
-    
     background-size: cover;
     background-repeat: no-repeat;
-     background: linear-gradient(90deg,#f0027f,#75489F);
-    background-position: center;
-    transition: all .1s ease-in-out;
-    display: d;
-    /* animation: banner-llv-animations 20s infinite linear alternate;*/
-
+     background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/img/banner_background.png');
 }
-/* 
+
 .banner-content-llv{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    color: #FFF;
-    background-color: rgba(0,0,0,0.2);
     display: flex;
     flex-direction: center;
     justify-content: center;
     align-items: center;
-
-} */
-
-@keyframes banner-llv-animations{
-    0%{
-        background-image: url('/img/102699880_165314561650639_1112310892311085056_o.jpg');
-    }
-    25%{
-        background-image: url('/img/102699880_165314561650639_1112310892311085056_o.jpg');
-    }
-    26%{
-        background-image: url('/img/104939693_170653044450124_4281198168837012639_o.jpg');
-    }
-    50%{
-        background-image: url('/img/104939693_170653044450124_4281198168837012639_o.jpg');
-    }
-    51%{
-        background-image: url('/img/caring-for-velvet.jpg.jpg');   
-    }
-    75%{
-        background-image: url('/img/caring-for-velvet.jpg');   
-    }
-    76%{
-        background-image: url('/img/99431777_161266212055474_2301823972091625472_o.jpg');
-    }
-    100%{
-        background-image: url('/img/99431777_161266212055474_2301823972091625472_o.jpg');    
-    }
+    
 } 
 
 .wave-llv{
+    position: relative;
     width: 100%;
-    height: 125px;
-  position: relative;
-  background: linear-gradient(90deg,#f0027f,#770cdb);
+    height: 250px;
+    background-color: brown;
+    /* background-color:  rgba(0,0,0,0.2); */
+    display: flex;
+
 } 
 
-.wave-llv:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.wave-llv svg{
+   
     width: 100%;
-    height: 125px;
-    background-size:#0000 ;
-    background-image: url('/img/wave#042D6D.png');
+    height: 100%;
+    background-color: chartreuse;
+    background-size: cover;
+}
+ 
 
+
+ /* ##########################  Seccion Last update ########################################### */
+
+.last-update-llv{
+   margin-top: 50px ;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    
+    position: relative;
+    
+}
+
+#Contenedor{
+    background-color: crimson !important;
+   
+}
+
+
+.last-update-llv .head-container-llv{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* background-color: black; */
+}
+
+.head-container-llv div{
+    position: absolute;
+   
+    margin: 20px 30px;  
+}
+
+.head-container-llv .showmore-llv{
+    float: right;
+    right: 10px;
+}
+
+.head-container-llv text{
+    position: relative;
+    width: 250px;
+    height: 20px;
+    left: 20px;
+   
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+
+#Contenedor .row-llv{
+
+    display:flex;
+    position: relative;
+    width: 100%;    
+    height: 480px;
+    background-color: aqua;
+
+} 
+
+.last-update-llv .row ul{
+    height: 100%;
+    width: 100%;
+    
 }
 
 
