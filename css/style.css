@@ -1,3 +1,25 @@
+button{
+    color: #042D6D !important;
+    border: 1px solid #042D6D !important;
+}
+button:hover{
+    
+    color:  white !important;
+    background-color: #042D6D !important;
+    border: 1px solid #042D6D !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* #######################   NAV BAR        ###################################### */
 
 .navbar{
@@ -182,16 +204,6 @@ position: relative;
     opacity: 100%;
     transition: 0.7 all ease-in-out;
 }
-button{
-    color: #042D6D !important;
-    border: 1px solid #042D6D !important;
-}
-button:hover{
-    
-    color:  white !important;
-    background-color: #042D6D !important;
-    border: 1px solid #042D6D !important;
-}
 
 
 /* /////////////////    Seccion outfits recientes con boostrap     /////////////////////   */
@@ -203,7 +215,7 @@ button:hover{
     /* background-color: teal; */
     margin-top: 50px;
     position: relative;
-
+    /* background-color: violet; */
     -webkit-flex-wrap: wrap;
     -ms-box-orient: horizontal;
      display: -webkit-box;
@@ -223,18 +235,7 @@ button:hover{
 }
  
 #Preview  .container{
-    /* height: 100%; */
-    /* background-color: blue; */
 
-    /* -webkit-flex-wrap: wrap !important;
-    -ms-box-orient: horizontal !important;
-     display: -webkit-box !important;
-     display: -moz-box !important;
-     display: -ms-flexbox !important;
-     display: -moz-flex !important;
-     display: -webkit-flex !important;
-     display: flex !important;
-    flex-wrap: wrap !important; */
 }
 
 
@@ -243,6 +244,108 @@ button:hover{
 height:450px;
 width: 100%;
 object-fit: cover;
+
+}
+
+.details-product{
+    height: 400px !important;
+}
+
+.details-product form {
+    height: 350px;
+}
+.container-box-llv {
+    position: relative !important;
+    height: 0xp !important;
+    /* background-color: violet !important; */
+    display: flex;
+}
+.Select-box{
+    width: 150px;
+    height: 100px;
+    /* background-color: lawngreen; */
+    position: relative;
+    margin-top: 20px;
+    /* display: flex; */
+}
+
+.Select-box label{
+    margin-bottom: 3px;
+    display: block;
+}
+
+.Select-box select {
+    color: #042D6D;
+    width: auto;
+    height: 42px;
+    padding: 10px 15px;
+    position: absolute;
+    line-height: 18px;
+    font-size: 15px;
+    border: 2px solid #D7DEE8;
+    -webkit-appearance:none;
+     appearance:unset;  
+     cursor: pointer;
+     border-radius: 10px; 
+    background-color:#D7DEE8 ;
+    /* justify-content: right; */
+    /* text-align: left; */
+   
+}
+
+
+.Select-box select:focus{
+    border: 2px solid #042D6D;
+}
+
+select option{
+    border-left: 2px;
+    border-right: 5px;
+    border-radius: 10px;
+}
+
+.Select-box::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top :50%;
+    margin-top: -5px;
+    border-top:8px solid #042D6D;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    pointer-events: none;
+}
+
+.select-box-sm-llv{
+    width: 60px;
+    /* margin-left: 25px; */
+}
+
+.select-box-lg-llv{
+    /*  margin-left: 200px;  */
+    padding-left: 20px;
+    /* padding-right: 40px; */
+} 
+
+
+
+.product-single-card-submit{
+    position: relative;
+    width: 250px;
+    height: 150px;
+}
+
+
+.product-single-card-submit button{
+    width: 200px;
+    position: relative;
+    height: 45px;
+    margin-left: 50px;
+    border: 2px solid #042D6D !important;
+}
+
+.product-single-card-submit button:focus{
+    background-color: rgba(4, 45, 109, .1) !important;
 }
 
 /* ///////////////////////     Vista Previa Detalle        ////////////////////////////////////// */
@@ -255,3 +358,26 @@ object-fit: cover;
         height: 300px;
     }
 }
+
+
+
+/* Clases Para Margenes Personales */
+
+.ml-ll-5{
+    margin-left: 5px;
+}
+
+.ml-ll-10{
+    margin-left: 10px;
+}
+.ml-ll-15{
+    margin-left: 15px;
+}
+.ml-ll-20{
+    margin-left: 20px;
+}
+/* .select-sm-llv{
+    margin-left: 200px;
+    padding-left: 87px;
+} */
+/* -----------------   Clases Para Margenes Personales */
