@@ -1,3 +1,10 @@
+@import url("/css/ARLRDBD.TTF");
+
+
+*{
+    font-family: "Arial Rounded MT Bold";
+}
+
 button{
     color: #042D6D !important;
     border: 1px solid #042D6D !important;
@@ -12,10 +19,17 @@ button:hover{
 
 
 
+body{
+    background-image: url("/img/Fondo_BSC.png");
+}
 
 
 
 
+.bg-llv-D5DFE9{
+
+    background-color: #D5DFE9;
+}
 
 
 
@@ -25,7 +39,8 @@ button:hover{
 .navbar{
     height: 57px !important;
     z-index: 1;
-    
+    position: fixed;
+   width: 100%; 
 }
 .navbar-color-llv{
     background-color: #042D6D !important;
@@ -205,6 +220,16 @@ position: relative;
     transition: 0.7 all ease-in-out;
 }
 
+.box-shares a{
+    position: relative;
+    display: flex;
+    justify-items: right;
+    justify-content: right;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
 
 /* /////////////////    Seccion outfits recientes con boostrap     /////////////////////   */
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
@@ -225,6 +250,7 @@ position: relative;
      display: -webkit-flex;
      display: flex;
     flex-wrap: wrap;
+   
 }
 
 .preview{
@@ -232,6 +258,7 @@ position: relative;
     height: 100%;
     background-color: azure;
     margin :20px 70px ;
+    
 }
  
 #Preview  .container{
@@ -244,7 +271,12 @@ position: relative;
 height:450px;
 width: 100%;
 object-fit: cover;
+box-shadow: lightslategray;
 
+}
+
+ .bg-llv{
+    background-color: white !important;
 }
 
 .details-product{
@@ -283,12 +315,12 @@ object-fit: cover;
     position: absolute;
     line-height: 18px;
     font-size: 15px;
-    border: 2px solid #D7DEE8;
+    border: 2px solid lightslategray;
     -webkit-appearance:none;
      appearance:unset;  
      cursor: pointer;
      border-radius: 10px; 
-    background-color:#D7DEE8 ;
+    background-color:lightslategray ;
     /* justify-content: right; */
     /* text-align: left; */
    
@@ -350,6 +382,12 @@ select option{
     color: #042D6D !important;
 }
 
+.more-details-box a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
 
 
 .box-social-media{
@@ -377,7 +415,7 @@ select option{
  
 .box-social-media ul li i{
     font-size: 20px;
-    color: blue;
+    color: #042D6D;
     cursor: pointer;
 }
 
@@ -390,7 +428,7 @@ select option{
      position: relative;
      color: #042D6D;
 }
-
+/* 
 .box-social-media ul li:before{
     content: "";
     position: absolute;
@@ -401,7 +439,7 @@ select option{
     background: #042D6D
 }
 
-
+ */
 
 ul li:last-child::before{
     display: none;
@@ -409,6 +447,118 @@ ul li:last-child::before{
 
 
 /* ///////////////////////     Vista Previa Detalle        ////////////////////////////////////// */
+
+#PromotionsCaruosel img{
+    height: 500px;
+    object-fit: fill;
+}
+
+
+
+
+
+#Collection-list .container img{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    position: relative;
+}
+
+
+
+#Footer{
+    /* height: 200px; */
+    background-color: #042D6D;
+
+}
+
+.box-follow-us {
+    
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+    width: 100%;
+
+}
+
+
+ .container-fluid .row a{
+    color: white !important;
+}
+.box-follow-us ul{
+ list-style: none;
+ width: 90%;
+ /* float: left; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ left: 0px;
+ 
+}
+
+
+.box-follow-us ul li i {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+.box-contact-us ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px ;
+}
+
+.box-contact-us ul li .icon{
+    width: 35px ;
+    height: 35px;
+    background: #FFF;
+    color: green;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.box-contact-us ul li .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copyright{
+    color: white;
+}
+
+
+.box-logo{
+    /* background-color: greenyellow; */
+    position: relative;
+    height: 100%;
+}
+
+
+.box-logo ul{
+    /* height: 100%; */
+    margin-top: 25%;
+    justify-content: center;
+    background-color: hotpink;
+    list-style: none;
+    position: absolute;
+}
+
+.box-logo ul li{
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 50% !important; */
+    /* height: 50px; */
+    /* background-color: indigo !important; */
+    position: absolute;
+}
+
 @media(max-width:767px){
     #logo{
         margin-top: -20px;
