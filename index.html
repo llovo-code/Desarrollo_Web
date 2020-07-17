@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link rel="stylesheet" href="/css/winds.css">
+ 
     <title>Brilay Store</title>
 </head>
 <body>
@@ -30,17 +30,17 @@
             <div class="collapse navbar-collapse navbar-color-llv ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#Inicio">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         OutFit
                     </a>
                     <div class="dropdown-menu dropdown-menu-color-llv" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Vestidos</a>
+                        <a class="dropdown-item" href="">Vestidos</a>
                         <a class="dropdown-item" href="#">Camisas</a>
                         <a class="dropdown-item" href="#">Pantalones</a>
                         <a class="dropdown-item" href="#">Shorts</a>
@@ -49,12 +49,16 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link " href="#PromotionsCaruosel" tabindex="" aria-disabled="">Promociones</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 form-llv">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn  my-2 my-sm-0" type="submit">Search</button>
+
+                <a href="/html/login.html" class="nav-link"><i class="far fa-user"></i></a>
+                <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+
             </form>
             </div>
         </div>
@@ -63,7 +67,7 @@
     <!-- ##############################################      BANNER           #################################################################### -->
     <section class="">
         
-        <div class="banner-llv">
+        <div id="Inicio" class="banner-llv">
             <div class="banner-content-llv">
                <img src="/img/logo_letters.png" alt="brilay">
             </div>
@@ -193,7 +197,7 @@
 
     <section id="Preview" class="mt-5 mb-5">
             <div class="container ">
-                <div class="row bg-llv">
+                <div class="row bg-llv justify-content-center">
                     <div class="col-lg-6 col-sm-8 column-llv mt-5 mb-5">
                        <img src="/img/Camisas/99131962_161544482027647_968765264143319040_n.jpg" alt="">
                     </div>
@@ -319,6 +323,7 @@
 
 <section id="Collection-list" class="mt-5">
     <div class="container mt-5">
+        <h3>Destacado</h3>
         <div class="row mt-5 ">
 
             <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5">
@@ -326,9 +331,9 @@
             </div>
             <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="/img/Pantalones/96106022_157561045759324_6132017841785798656_o.jpg" alt=""></div>
             <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="/img/Vestidos/99408503_161327302049365_210779445651308544_o.jpg" alt=""></div>
-            <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="" alt=""></div>
-            <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="" alt=""></div>
-            <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="" alt=""></div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="/img/98599422_161327788715983_7999359318736502784_o.jpg" alt=""></div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="/img/100737640_162215831960512_9149364132527472640_o.jpg" alt=""></div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3  mt-5"><img src="/img/foto4.jpg" alt=""></div>
 
         </div>
     </div>
@@ -364,7 +369,7 @@
         <div class="row text-center justify-content-center">
             <div class="col-12 col-lg">
               <a href="#">Sigenos</a>
-              <div class="box-follow-us mt-5">
+              <div class="box-follow-us mt-1 justify-content-center">
                   <ul>
                     <li><a href="https://www.facebook.com/brilaynic" target="_blank"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/brilay_store/" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -372,9 +377,9 @@
                   </ul>
               </div>
             </div>
-            <div class="col-12 col-lg">
+            <div class="col-12 col-lg justify-content-center">
               <a href="#">Contáctanos</a>
-              <div class="box-contact-us mt-5">
+              <div class="box-contact-us mt-1 justify-content-center">
                   <ul>
                       <li>
                           <div class="icon"><i class="fab fa-whatsapp"></i></div>
@@ -384,26 +389,35 @@
               </div>
             </div>
             <div class="col-12 col-lg">
-              <a href="#">Prensa</a>
+              <a href="#" class=""></a>
+              <div class="w-100"></div>
+              <div class=" justify-content-center">
+                  <ul>
+                      <li><a href="#" class="">Vestidos</a></li>
+                      <li><a href="#" class="">Pantalones</a></li>
+                      <li><a href="#" class="">Camisas</a></li>
+                      <li><a href="#" class="">Shorts</a></li>
+                      <li><a href="#" class="">Conjuntos</a></li>
+                      <li><a href="#" class="">Zapatos</a></li>
+                  </ul>
+              </div>
             </div>
-            <div class="col-12 col-lg">
-              <a href="#">Conferencias</a>
-            </div>
-            <div class="col-12 col-lg">
-              <a href="#">Términos y condiciones</a>
-            </div>
-            <div class="col-12 col-lg">
+            
+            <div class="col-12 col-lg mb-5">
                 <div class="box-logo justify-content-center">
-                    <ul><li>
-                        <a href="#"><img id="logo" src="img/80753425_105704607611635_7573622747104804864_n.jpg" alt=""></a>
-                    </li></ul>
+
+                    <a href="#"><img id="logo-footer" src="img/80753425_105704607611635_7573622747104804864_n.jpg" alt=""></a>
+                    
+                </div>
+                   
+                           
                 </div>
             </div>
             
           </div>
      
    
-        <div class="row text-center">
+        <div class="row text-center mt-5">
             <div class="col-12 justify-content-center">
                 <div class="copyright">
                     <p>Copyright © Brilay Store 2020 – All rights reserved </p>

@@ -1,4 +1,5 @@
 @import url("/css/ARLRDBD.TTF");
+
 *{
     font-family: "Arial Rounded MT Bold";
 }
@@ -6,11 +7,10 @@
 /*************************************************************** INICIO DE SESIÓN ***************************************************************/
 body {
     background-image: url(/img/Fondo_BS.png);
-    background-repeat: no-repeat;
-    border-style: cover; 
+    /* background-repeat: no-repeat;
+    background-size: cover; 
     background-attachment: fixed;
-    width: 100vw;
-    height: auto;
+    */
 }
 
 .formulario {
