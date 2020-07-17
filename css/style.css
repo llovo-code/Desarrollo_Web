@@ -1,9 +1,46 @@
+@import url("/css/ARLRDBD.TTF");
+
+
+*{
+    font-family: "Arial Rounded MT Bold";
+}
+
+button{
+    color: #042D6D !important;
+    border: 1px solid #042D6D !important;
+}
+button:hover{
+    
+    color:  white !important;
+    background-color: #042D6D !important;
+    border: 1px solid #042D6D !important;
+}
+
+
+
+
+body{
+    background-image: url("/img/Fondo_BSC.png");
+}
+
+
+
+
+.bg-llv-D5DFE9{
+
+    background-color: #D5DFE9;
+}
+
+
+
+
 /* #######################   NAV BAR        ###################################### */
 
 .navbar{
     height: 57px !important;
     z-index: 1;
-    
+    position: fixed;
+   width: 100%; 
 }
 .navbar-color-llv{
     background-color: #042D6D !important;
@@ -92,151 +129,465 @@ position: relative;
 
  /* ##########################  Seccion Last update ########################################### */
 
-.last-update-llv{
-   margin-top: 50px ;
-    display: flex;
-    width: 100%;
-    height: 450px;
-    
+#RecentOutfit{
     position: relative;
-    /* background-color: darkgoldenrod; */
-    
+    display: flex;
+  
 }
 
 #Contenedor{
-    /* background-color: crimson !important; */
-   background-image: url('/img/banner_background.png');
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+   
+    position: relative !important;
+    /* background-color: tomato; */
+
 }
 
 
-.last-update-llv .head-container-llv{
+
+/* ###############    Seccion outfits recientes con boostrap     ################### */
+
+.border{
+    border: 2px solid #0000;
+}
+
+.mt-4{
+    margin-left: (8 * .25) !important;
+}
+
+/* .row{
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative !important;
+} */
+
+.height-row-llv {
+     /* height: 100vh;  */
+     /* -webkit-flex-wrap: wrap;
+    -ms-box-orient: horizontal;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     display: flex;
+    flex-wrap: wrap; */
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+
+.column-llv{
+    width: 100% !important;
+    height: 100% !important;
+}
+/*
+.card {
+    height: 100% !important;
+}*/
+.card .img-container{
+    height:400px !important;
+    position: relative;
+    /* background-color: lawngreen; */
+    display: flex;
+} */
+.card .img-container .card-img-top{
+    
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1;
+}
+.btn-add-car-buy{
+    
+    flex-direction: column;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 4;
+    position: absolute;
+    background-color: rgb(0,0,0,0.1);
+    display: flex;
+    flex-direction:center;
+    justify-content: end;
+    align-items: center;
+    /* vertical-align: bottom; */
+    transition: 0.7  ease-in-out;
+    opacity: 0%;
+}
+.btn-add-car-buy:hover{
+    opacity: 100%;
+    transition: 0.7 all ease-in-out;
+}
+
+.box-shares a{
     position: relative;
     display: flex;
-    width: 100%;
-    height: 60px;
-    /* background-color: black; */
+    justify-items: right;
+    justify-content: right;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
 }
 
-.head-container-llv div{
-    position: absolute;
+
+/* /////////////////    Seccion outfits recientes con boostrap     /////////////////////   */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* **********************      Vista Previa Detalles      ******************************************** */
+
+#Preview {
+    /* height: 450px; */
+    /* background-color: teal; */
+    margin-top: 50px;
+    position: relative;
+    /* background-color: violet; */
+    -webkit-flex-wrap: wrap;
+    -ms-box-orient: horizontal;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     display: flex;
+    flex-wrap: wrap;
    
-    margin: 20px 30px;  
 }
 
-.head-container-llv .showmore-llv{
-    float: right;
-    right: 10px;
+.preview{
+   position: relative;
+    height: 100%;
+    background-color: azure;
+    margin :20px 70px ;
+    
+}
+ 
+#Preview  .container{
+
 }
 
-.head-container-llv .showmore-llv button{
-    background-color: white;
-    color: blue;
+
+
+#Preview  .container img{
+height:450px;
+width: 100%;
+object-fit: cover;
+box-shadow: lightslategray;
+
 }
 
-.head-container-llv .showmore-llv button:hover{
-    background-color:#042D6D;
+ .bg-llv{
+    background-color: white !important;
+}
+
+.details-product{
+    height: 400px !important;
+}
+
+.details-product form {
+    height: 250px;
+  /* background-color: violet !important; */
+}
+.container-box-llv {
+    position: relative !important;
+    height: 0xp !important;
+  
+    display: flex;
+}
+.Select-box{
+    width: 150px;
+    height: 100px;
+    /* background-color: lawngreen; */
+    position: relative;
+    margin-top: 20px;
+    /* display: flex; */
+}
+
+.Select-box label{
+    margin-bottom: 3px;
+    display: block;
+}
+
+.Select-box select {
+    color: #042D6D;
+    width: auto;
+    height: 42px;
+    padding: 10px 15px;
+    position: absolute;
+    line-height: 18px;
+    font-size: 15px;
+    border: 2px solid lightslategray;
+    -webkit-appearance:none;
+     appearance:unset;  
+     cursor: pointer;
+     border-radius: 10px; 
+    background-color:lightslategray ;
+    /* justify-content: right; */
+    /* text-align: left; */
+   
+}
+
+
+.Select-box select:focus{
+    border: 2px solid #042D6D;
+}
+
+select option{
+    border-left: 2px;
+    border-right: 5px;
+    border-radius: 10px;
+}
+
+.Select-box::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top :50%;
+    margin-top: -5px;
+    border-top:8px solid #042D6D;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    pointer-events: none;
+}
+
+.select-box-sm-llv{
+    width: 60px;
+    /* margin-left: 25px; */
+}
+
+.select-box-lg-llv{
+    /*  margin-left: 200px;  */
+    padding-left: 20px;
+    /* padding-right: 40px; */
+} 
+
+
+
+.product-single-card-submit{
+    position: relative;
+    width: 250px;
+    height: 150px;
+}
+
+
+.product-single-card-submit button{
+    width: 200px;
+    position: relative;
+    height: 45px;
+    margin-left: 50px;
+    border: 2px solid #042D6D !important;
+}
+
+.product-single-card-submit button:hover{
+    background-color: rgba(4, 45, 109, .1) !important;
+    color: #042D6D !important;
+}
+
+.more-details-box a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+.box-social-media{
+    width: 200px;
+    padding: 5px 0;
+  
+}
+.box-social-media ul{
+    margin-top: 30px;
+ }
+ 
+ .box-social-media  ul{
+     display: flex;
+     justify-content: space-evenly;
+     list-style: none;
+ }
+ 
+.box-social-media ul li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ 
+.box-social-media ul li i{
+    font-size: 20px;
+    color: #042D6D;
+    cursor: pointer;
+}
+
+.box-social-media ul li{
+
+    width: 40px;
+    height: 40px;
+    border: 2px solid #042D6D;
+     border-radius: 50%;
+     position: relative;
+     color: #042D6D;
+}
+/* 
+.box-social-media ul li:before{
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -21px;
+    width: 15px;
+    height:2px ;
+    background: #042D6D
+}
+
+ */
+
+ul li:last-child::before{
+    display: none;
+}
+
+
+/* ///////////////////////     Vista Previa Detalle        ////////////////////////////////////// */
+
+#PromotionsCaruosel img{
+    height: 500px;
+    object-fit: fill;
+}
+
+
+
+
+
+#Collection-list .container img{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    position: relative;
+}
+
+
+
+#Footer{
+    /* height: 200px; */
+    background-color: #042D6D;
+
+}
+
+.box-follow-us {
+    
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+    width: 100%;
+
+}
+
+
+ .container-fluid .row a{
+    color: white !important;
+}
+.box-follow-us ul{
+ list-style: none;
+ width: 90%;
+ /* float: left; */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ left: 0px;
+ 
+}
+
+
+.box-follow-us ul li i {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+.box-contact-us ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px ;
+}
+
+.box-contact-us ul li .icon{
+    width: 35px ;
+    height: 35px;
+    background: #FFF;
+    color: green;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.box-contact-us ul li .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copyright{
     color: white;
 }
 
-.head-container-llv text{
+
+.box-logo{
+    /* background-color: greenyellow; */
     position: relative;
-    width: 250px;
-    height: 20px;
-    left: 20px;
-   
-}
-
-h2{
-    text-transform: uppercase;
-}
-
-/* ###############################  BEGIN SECTION LAST UPDATE 
-##################################  whit rows*/
-
-#Contenedor .row-llv{
-
-    display:flex;
-    position: relative;
-    width: 100%;    
-    height: 350px;
-    /* background-color: brown; */
-    margin-top: 20px;
-
-} 
-
-.last-update-llv .row-llv ul{
-    height: 100% ;
-    width: 100% ;
-   /* background-color: cornflowerblue; */
-    display:flex;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-.last-update-llv .row-llv ul li{
-    width: 40%;
-    height: 300px;
-    background-color: darkblue;
-    margin-left:20px ;
-    margin-right: 20px ;
-    margin-top: 25px;
-      border-radius:35px ; 
-    list-style-type: none;
-    border: 2px solid #042D6D ;
-  
-    
-}
-
-/* ###############################  BEGIN SECTION LAST UPDATE 
-##################################  whit photos*/
-.border-container-llv{
-    border-radius: 35px;
-}
-
-.image-presentation-llv{
-    width: 100%;
     height: 100%;
-    /* background-color: darkslategray; */
-    position: relative;
-    /* border-radius: 20%; */
-}
-
-.content-image-llv{
-    width: 100%;
-    height: 80%;
-    position: relative;
-    /* background-color: darkgreen; */
-    /* border-radius: 20%; */
-   
-}
-
-.content-image-llv img{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: contain;
-    
 }
 
 
-.documentation-image-llv{
-    width: 100%;
-    height: 20%;
-    position: relative;
-    background-color: darkorchid;
-
-    
+.box-logo ul{
+    /* height: 100%; */
+    margin-top: 25%;
+    justify-content: center;
+    background-color: hotpink;
+    list-style: none;
+    position: absolute;
 }
 
-
-/* ###############################  end SECTION LAST UPDATE 
-##################################  whit photos*/
+.box-logo ul li{
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 50% !important; */
+    /* height: 50px; */
+    /* background-color: indigo !important; */
+    position: absolute;
+}
 
 @media(max-width:767px){
     #logo{
         margin-top: -20px;
     }
+
+    .col-height{
+        height: 300px;
+    }
 }
+
+
+
+/* Clases Para Margenes Personales */
+
+.ml-ll-5{
+    margin-left: 5px;
+}
+
+.ml-ll-10{
+    margin-left: 10px;
+}
+.ml-ll-15{
+    margin-left: 15px;
+}
+.ml-ll-20{
+    margin-left: 20px;
+}
+/* .select-sm-llv{
+    margin-left: 200px;
+    padding-left: 87px;
+} */
+/* -----------------   Clases Para Margenes Personales */
