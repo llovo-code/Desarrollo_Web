@@ -1,0 +1,117 @@
+@import url("/css/ARLRDBD.TTF");
+*{
+    font-family: "Arial Rounded MT Bold";
+}
+
+/*************************************************************** INICIO DE SESIÓN ***************************************************************/
+body {
+    background-image: url(/img/Fondo_BS.png);
+    background-repeat: no-repeat;
+    border-style: cover; 
+    background-attachment: fixed;
+}
+
+.formulario {
+    /* background: rgba(0, 0, 0,.1); */
+    background: rgba(4, 45, 109, 0.3) !important; /* Es el sombreado del contenedor*/
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,-0.568);
+    color: white;
+}
+
+/*Manipulando cajas de texto */
+.form-control {
+    background: rgba(255, 255, 255,.5) !important;
+    /* background: rgba(4, 45, 109, 0.2) !important; */
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control :focus {
+    background: none !important;    /*Para que las cajas no tengan color*/
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Manipulando la apariencia de las letras de las cajas de texto*/
+.form-control::placeholder {
+    color: white!important;
+
+    
+}
+
+/*Manipulación del Boton*/
+.ingresar {
+    background-color: #042D6D !important;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700 !important;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+}
+
+.ingresar:hover {
+    color: white;
+}
+
+.bg-blue-kg{
+    border:none !important;
+    color: #042D6D;
+
+}
+
+.bg-blue-kg:hover{
+    border-color: white !important;
+    background-color: rgba(4,45,109,0.7) !important;
+    color: white; 
+}
+
+/*Alineacion del contenido*/
+form div{
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+}
+
+/*Manipulacion de la etiqueta Olvide mi contraseña*/
+.Olvide {
+    color: #042D6D;
+}
+
+.Olvide:hover {
+    color: white;
+}
+
+.Registro {
+    color: #042D6D;
+    text-align: left;
+}
+
+.Registro:hover {
+    color: white;
+    font-weight: 700;
+}
+
+
+.position-kg{
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/*************************************************************** RECUPERACIÓN CONTRASEÑA ***************************************************************/
+/*Manipulando El text en el formulario*/
+.ETexto {
+    color: #042D6D;
+}
+
+.style-text{
+    font-size: 25px;
+}
