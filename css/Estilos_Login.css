@@ -9,6 +9,8 @@ body {
     background-repeat: no-repeat;
     border-style: cover; 
     background-attachment: fixed;
+    width: 100vw;
+    height: auto;
 }
 
 .formulario {
